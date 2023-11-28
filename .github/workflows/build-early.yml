@@ -1,4 +1,4 @@
-name: Publish
+name: Publish Early
 
 on:
   workflow_dispatch:
@@ -56,7 +56,7 @@ jobs:
           # This is used for uploading release assets to github
           #npm run build:${GITHUB_REF##*/} -> Branch name
           #npm exec electron-builder -- --publish always --linux --win
-          GH_TOKEN: ${{ secrets.github_token }}
+          GH_TOKEN: ${{ secrets.gh_token }}
         run: |
           npm run postinstall
           npm run build
@@ -118,7 +118,7 @@ jobs:
           # This is used for uploading release assets to github
           #npm run build:${GITHUB_REF##*/} -> Branch name
           #npm exec electron-builder -- --publish always --linux --win
-          GH_TOKEN: ${{ secrets.github_token }}
+          GH_TOKEN: ${{ secrets.gh_token }}
         run: |
           npm run postinstall
           npm run build
