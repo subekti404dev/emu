@@ -1,0 +1,126 @@
+.selector-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  .lead {
+    margin-bottom: var(--margin1);
+  }
+  &__img {
+    margin-right: 20px;
+    // width: 55%;
+    text-align: right;
+    position: relative;
+    img,
+    .simple-carousel {
+      //min-height: 360px;
+      //max-width: 671px;
+      //max-height: calc(100vh - 290px);
+      max-height: 58vh;
+      width: auto;
+      // height: auto;
+      &.is-hidden {
+        display: none;
+      }
+    }
+    .simple-carousel {
+      width: 671px;
+    }
+    .is-hidden {
+      opacity: 0;
+      transition: 0.8s;
+      pointer-events: none;
+    }
+  }
+
+  &__options {
+    max-width: 100px;
+    &--full {
+      max-width: 25%;
+    }
+  }
+
+  &__details {
+    margin-left: 20px;
+    li {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+  }
+
+  &.selector-menu--mini {
+    .card {
+      padding: 6px;
+      margin-bottom: 0;
+      .h4 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .selector-menu__img {
+      max-width: 220px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        &.is-hidden {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  // justify-content: space-between;
+  flex-direction: row;
+  height: 90%;
+  li {
+    flex-basis: 45%;
+    margin-bottom: 50px;
+  }
+}
+
+.list-grid {
+  .selector-menu__img.selector-menu__img {
+    max-width: 100%;
+    img,
+    .simple-carousel {
+      max-width: 100%;
+      min-height: 122px;
+    }
+  }
+
+  .h3 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .selector-menu__options {
+    width: 100%;
+    max-width: 150px;
+    > p {
+      margin-bottom: 12px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+      font-weight: bold;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 10px;
+      }
+    }
+  }
+  .card {
+    padding: 6px;
+    margin-bottom: 0;
+  }
+  .selector-menu__details {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.header {
+  padding-top: 10px;
+  &__badge {
+    position: fixed;
+    top: -8px;
+    right: -58px;
+    background: rgb(56, 128, 162);
+    padding: 20px;
+    padding-bottom: 10px;
+
+    width: 150px;
+    transform: rotate(45deg);
+    text-align: center;
+  }
+  &__dev {
+    background: rgb(251, 109, 156);
+    color: white;
+  }
+  &__early {
+    background: rgb(251, 225, 109);
+    color: #000;
+  }
+  &__accesibility {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+  }
+  &__version {
+    position: absolute;
+    left: 10px;
+    bottom: 0px;
+  }
+  &__flag {
+    width: 28px;
+    margin-left: 10px;
+  }
+  //Titles in front of animations
+  .h2 {
+    z-index: 10;
+    position: relative;
+  }
+}
